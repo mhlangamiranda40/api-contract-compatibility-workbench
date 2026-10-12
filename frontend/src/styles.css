@@ -13,7 +13,7 @@
 * { box-sizing: border-box; }
 
 body { margin: 0; min-width: 320px; min-height: 100vh; }
-button, textarea { font: inherit; }
+button, textarea, input, select { font: inherit; }
 
 .page-shell { width: min(1180px, calc(100% - 48px)); margin: 0 auto; }
 .topbar { height: 76px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--line); }
@@ -53,6 +53,21 @@ textarea:focus { border-color: #7895f3; box-shadow: 0 0 0 3px rgba(49, 95, 232, 
 .change-item.addition strong { color: #14673f; }
 .change-item.unchanged { border-color: #dce3ed; background: #fbfcfe; }
 .change-item.unchanged strong { color: #68768a; }
+.project-workspace { display: flex; flex-direction: column; gap: 17px; }
+.project-form { display: flex; flex-direction: column; gap: 8px; color: #344258; font-size: 13px; font-weight: 600; }
+.project-form input, .project-form select, #project-picker { min-height: 40px; width: 100%; padding: 8px 10px; border: 1px solid #dce3ed; border-radius: 8px; background: #fff; color: #26364a; }
+.inline-fields { display: flex; gap: 8px; }
+.inline-fields input { flex: 1; }
+.secondary-button { min-height: 40px; padding: 0 15px; border: 1px solid #cbd7ff; border-radius: 8px; background: #edf1ff; color: var(--blue); cursor: pointer; font-weight: 600; }
+.version-form { padding-top: 8px; border-top: 1px solid var(--line); }
+.version-form .definition-editor { margin-top: 4px; }
+.version-form textarea { height: 300px; }
+.storage-note, .history-empty { margin: 0; color: var(--muted); font-size: 12px; line-height: 1.55; }
+.project-history { display: flex; flex-direction: column; gap: 10px; }
+.version-row { display: flex; flex-direction: column; gap: 4px; padding: 11px; border: 1px solid var(--line); border-radius: 8px; }
+.version-row strong { color: #344258; font-size: 13px; }
+.version-row span { color: var(--muted); font-size: 11px; }
+.compare-saved-form { margin-top: 12px; padding-top: 17px; border-top: 1px solid var(--line); }
 .editor-footer { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding-top: 16px; }
 .editor-footer p { margin: 0; color: var(--muted); font-size: 12px; }
 .primary-button { min-height: 42px; padding: 0 17px; border: 0; border-radius: 8px; background: var(--blue); color: #fff; cursor: pointer; font-weight: 600; transition: background .15s ease, transform .15s ease; }
