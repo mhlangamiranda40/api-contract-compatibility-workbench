@@ -1,0 +1,13 @@
+target/
+build/
+.gradle/
+.idea/
+.vscode/
+*.iml
+.env
+.env.*
+!.env.example
+node_modules/
+dist/
+.DS_Store
+Thumbs.db
